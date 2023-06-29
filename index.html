@@ -9,92 +9,97 @@
     <title>Game Inventory</title>
 </head>
 <body>
-    <div class="header">
-        <h1>Video Game Inventory</h1>
-    </div>
-    <br>
-    <div class="video-games">
-        <div class="vg1">
-            <img src="https://upload.wikimedia.org/wikipedia/en/d/d8/Little_Nightmares_Box_Art.png" alt="video game poster">
-            <h2>Little Nighmares</h2>
-            <hr/>
-            <p id="console">PlayStation 5, Windows and Xbox One</p>
-            <br>
-            <p id="price">$59.99</p>
-            <br>
-            <button id="stock">In Stock</button>
-            <br>
-            <button id="delete">Remove</button>
+    <div class="container">
+        <div class="header">
+            <h1>Video Game Inventory</h1>
         </div>
-        <div class="vg2">
-            <img src="https://ae01.alicdn.com/kf/S870f9d63785c47728971860bc32c8176i/Fall-Guys-Ultimate-Knockout-Game-Poster-Fall-Guys-Face-Rainbow-Game-Canvas-Posters-and-Prints-Canvases.jpg" alt="video game poster">
-            <h2>Fall Guys</h2>
-            <hr/>
-            <p id="console">PlayStation 5, Nintendo Switch and Xbox One</p>
+        <br>
+        <div class="video-games">
+            <div class="vg1">
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/d8/Little_Nightmares_Box_Art.png" alt="video game poster" height="355" width="280">
+                <h2>Little Nighmares</h2>
+                <hr/>
+                <p id="console">PlayStation 5, Windows and Xbox One</p>
+                <br>
+                <p id="price">$59.99</p>
+                <br>
+                <button id="stock">In Stock</button>
+                <br>
+                <button id="delete">Remove</button>
+            </div>
             <br>
-            <p id="price">$12.99</p>
+            <div class="vg2">
+                <img src="https://ae01.alicdn.com/kf/S870f9d63785c47728971860bc32c8176i/Fall-Guys-Ultimate-Knockout-Game-Poster-Fall-Guys-Face-Rainbow-Game-Canvas-Posters-and-Prints-Canvases.jpg" alt="video game poster" height="355" width="280">
+                <h2>Fall Guys</h2>
+                <hr/>
+                <p id="console">PlayStation 5, Nintendo Switch and Xbox One</p>
+                <br>
+                <p id="price">$12.99</p>
+                <br>
+                <button id="stock">In Stock</button>
+                <br>
+                <button id="delete">Remove</button>
+            </div>
             <br>
-            <button id="stock">In Stock</button>
+            <div class="vg3">
+                <img src="https://m.media-amazon.com/images/I/51C5W5pp-yL._AC_UF1000,1000_QL80_.jpg" alt="video game poster" height="355" width="280">
+                <h2>Mario Party</h2>
+                <hr/>
+                <p id="console">Nintendo Switch</p>
+                <br>
+                <p id="price">$39.99</p>
+                <br>
+                <button id="stock">In Stock</button>
+                <br>
+                <button id="delete">Remove</button>
+            </div>
             <br>
-            <button id="delete">Remove</button>
         </div>
-        <div class="vg3">
-            <img src="https://m.media-amazon.com/images/I/51C5W5pp-yL._AC_UF1000,1000_QL80_.jpg" alt="video game poster">
-            <h2>Mario Party</h2>
+        <div class="new-game">
+            <h2>Add New Game</h2>
             <hr/>
-            <p id="console">Nintendo Switch</p>
-            <br>
-            <p id="price">$39.99</p>
-            <br>
-            <button id="stock">In Stock</button>
-            <br>
-            <button id="delete">Remove</button>
-        </div>
-    </div>
-    <div class="new-game">
-        <h2>Add New Game</h2>
-        <hr/>
-        <div class="form">
-            <form action="main.js" method="POST">
-                <div>
-                    <label for="Gname">Name</label>
+            <div class="form">
+                <form action="main.js" method="POST">
+                    <div>
+                        <label for="Gname">Name</label>
+                        <br>
+                        <input type="text" id="Gname" name="Gname" required>
+                    </div>
                     <br>
-                    <input type="text" id="Gname" name="Gname" required>
-                </div>
-                <br>
-                <div>
-                    <label for="cType">Console</label>
+                    <div>
+                        <label for="cType">Console</label>
+                        <br>
+                        <input type="text" id="cType" name="cType" required>
+                    </div>
                     <br>
-                    <input type="text" id="cType" name="cType" required>
-                </div>
-                <br>
-                <div>
-                    <label for="NewPrice">Price</label>
+                    <div>
+                        <label for="NewPrice">Price</label>
+                        <br>
+                        <input type="text" id="NewPrice" name="NewPrice" required>
+                    </div>
                     <br>
-                    <input type="text" id="NewPrice" name="NewPrice" required>
-                </div>
-                <br>
-                <div>
-                    <label for="img">Image URL</label>
+                    <div>
+                        <label for="img">Image URL</label>
+                        <br>
+                        <input type="url" id="img" name="img" required>
+                    </div>
                     <br>
-                    <input type="url" id="img" name="img" required>
-                </div>
-                <br>
-                <div>
-                    <label for="stockOption">In Stock</label>
-                    <select name="inStock" id="inStock" placeholder="--Select One--">
-                        <option value="yes">In Stock</option>
-                        <option value="no">Out of Stock</option>
-                    </select>
-                </div>
-                <div>
-                    <input type="reset">
-                </div>
-                <div>
-                    <input type="submit">
-                </div>
-                
-            </form>
+                    <div>
+                        <label for="stockOption">In Stock</label>
+                        <br>
+                        <select name="inStock" id="inStock" placeholder="--Select One--">
+                            <option value="yes">In Stock</option>
+                            <option value="no">Out of Stock</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="reset">
+                    </div>
+                    <div>
+                        <input type="submit">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     

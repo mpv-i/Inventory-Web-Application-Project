@@ -1,0 +1,26 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 250px;
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 15px;
+}
+
+.video-games {
+    background-color: aqua;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto;
+    grid-column: 1 / -1;
+    text-align: center;
+    border: 1px solid greenyellow;
+    background-color: greenyellow;
+}
+
+p {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
