@@ -1,12 +1,13 @@
 
 body {
     background-color: black;
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXNvc2tqcGNteWw5YTcyd2Rra3JpbDJzZjR1OG5xZGowZnRxeDR1ZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/VOgpnDOAddaN0zr9UE/giphy.gif);
     
 }
 
 .container {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr
+    grid-template-columns: 500px 450px 600px
 
 }
 
@@ -29,10 +30,11 @@ body {
     font-family: impact;
     color: whitesmoke;
     text-shadow: 10in;
+    background-image: url(https://media.tenor.com/J7kPFbkrT-gAAAAd/space-planets.gif);
 }
 
 #delete {
-    color: white;
+    color: black;
     background-color: darkred;
     border: 10px solid darkred;
 }
@@ -45,9 +47,9 @@ body {
 
 h2 {
     font-family:  Impact;
-    color: rgb(0, 5, 39);
+    color: rgb(212, 211, 255);
     text-align: center;
-    background-image: url(https://i.gifer.com/WMV.gif);
+    background-image: url(https://media.tenor.com/J7kPFbkrT-gAAAAd/space-planets.gif);
 }
 
 label {
@@ -56,6 +58,7 @@ label {
     font-family: sans-serif;
     font-weight: bold;
     grid-column: 1 / -1;
+    background-image: url(https://cdn.dribbble.com/users/207059/screenshots/2354622/androidtipsspacepanoramadribbble.gif);
 }
 
 h1 {
@@ -93,3 +96,5 @@ h1 {
     background-color: cornflowerblue;
     font-weight: bold;
 }
+
+.url {cursor: url(https://w7.pngwing.com/pngs/612/26/png-transparent-controller-gamepad-xbox-video-games-computer-game-icon.png),auto;}
