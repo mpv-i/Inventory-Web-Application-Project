@@ -1,26 +1,95 @@
 
+body {
+    background-color: black;
+    
+}
+
 .container {
     display: grid;
-    grid-template-columns: 200px 250px;
-    grid-auto-rows: minmax(150px, auto);
-    grid-gap: 15px;
+    grid-template-columns: 2fr 1fr 2fr
+
 }
 
 .video-games {
-    background-color: aqua;
+    background-color: black;
 }
 
-.header {
-    display: grid;
-    grid-template-columns: auto;
+
+.vgImages {
+    background-color: black;
+}
+
+.new-game {
+    background-color: black;
+    text-align: left;
+}
+
+#addNew {
+    text-align: center;
+    font-family: impact;
+    color: whitesmoke;
+    text-shadow: 10in;
+}
+
+#delete {
+    color: white;
+    background-color: darkred;
+    border: 10px solid darkred;
+}
+
+#stock {
+    background-color: grey;
+    font-weight: bold;
+}
+
+
+h2 {
+    font-family:  Impact;
+    color: rgb(0, 5, 39);
+    text-align: center;
+    background-image: url(https://i.gifer.com/WMV.gif);
+}
+
+label {
+    color: whitesmoke;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    grid-column: 1 / -1;
+}
+
+h1 {
     grid-column: 1 / -1;
     text-align: center;
-    border: 1px solid greenyellow;
-    background-color: greenyellow;
+    color: black;
+    font-family: Impact;
+    border: 80px round black;
+    background-image: url(https://i.gifer.com/WMV.gif);
+    background-color:  rgb(139, 241, 102);
+    margin: 0;
 }
 
-p {
+#price {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: larger;
+}
+
+#console {
     font-family: sans-serif;
     font-weight: bold;
     font-style: italic;
+    color: rgb(246, 255, 233);
+}
+
+#reset {
+    background-color:white;
+    font-weight: bold;
+    color: grey;
+}
+
+#submit {
+    background-color: cornflowerblue;
+    font-weight: bold;
 }
