@@ -11,8 +11,7 @@
 <body>
         <h1>Video Game Inventory</h1>
         <div class="container">
-            <div class="video-games">
-                <div class="vg1">
+            <div class="video-games" id="videoGames">
                     <h2>Little Nightmares</h2>
                     <div class="image1">
                         <img src="https://upload.wikimedia.org/wikipedia/en/d/d8/Little_Nightmares_Box_Art.png" alt="video game poster" height="355" width="280">
@@ -26,12 +25,11 @@
                     <button id="stock">In Stock</button>
                     <br>
                     <button id="delete">Remove</button>
-                </div>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div class="vg2">
+                
                     <h2>Fall Guys</h2>
                     <div class="image2">
                         <img src="https://ae01.alicdn.com/kf/S870f9d63785c47728971860bc32c8176i/Fall-Guys-Ultimate-Knockout-Game-Poster-Fall-Guys-Face-Rainbow-Game-Canvas-Posters-and-Prints-Canvases.jpg" alt="video game poster" height="355" width="280">
@@ -45,12 +43,12 @@
                     <button id="stock">In Stock</button>
                     <br>
                     <button id="delete">Remove</button>
-                </div>
+              
                 <br>
                 <br>
                 <br>
                
-                <div class="vg3">
+                
                     <h2>Mario Party</h2>
                     <div class="image3">
                         <img src="https://m.media-amazon.com/images/I/51C5W5pp-yL._AC_UF1000,1000_QL80_.jpg" alt="video game poster" height="355" width="280">
@@ -65,38 +63,37 @@
                     <br>
                     <button id="delete">Remove</button>
                 </div>
-                </div>
                 <br>
             <div class="new-game">
                 <h2 id="addNew">ADD NEW GAME</h2>
                 <hr/>
                     <form action="main.js" method="POST">
                         
-                            <label for="Gname">Name *</label>
+                            <label for="Gname" id="Gname">Name *</label>
                             <br>
                             <input type="text" id="Gname" name="Gname" required>
                        
                         <br>
                        
-                            <label for="cType">Console *</label>
+                            <label for="cType" id="cType">Console *</label>
                             <br>
                             <input type="text" id="cType" name="cType" required>
                        
                         <br>
                        
-                            <label for="NewPrice">Price *</label>
+                            <label for="NewPrice" id="NewPrice">Price *</label>
                             <br>
                             <input type="text" id="NewPrice" name="NewPrice" required>
                        
                         <br>
                         
-                            <label for="img">Image URL *</label>
+                            <label for="img" id="img">Image URL *</label>
                             <br>
                             <input type="url" id="img" name="img" required>
                         
                         <br>
                         
-                            <label for="stockOption">In Stock *</label>
+                            <label for="stockOption" id="inStock">In Stock *</label>
                             <br>
                             <select name="inStock" id="inStock" placeholder="--Select One--">
                                 <option value="yes">In Stock</option>

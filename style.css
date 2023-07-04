@@ -2,7 +2,6 @@
 body {
     background-color: black;
     background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXNvc2tqcGNteWw5YTcyd2Rra3JpbDJzZjR1OG5xZGowZnRxeDR1ZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/VOgpnDOAddaN0zr9UE/giphy.gif);
-    
 }
 
 .container {
@@ -34,7 +33,7 @@ body {
 }
 
 #delete {
-    color: black;
+    color: white;
     background-color: darkred;
     border: 10px solid darkred;
 }
@@ -97,4 +96,23 @@ h1 {
     font-weight: bold;
 }
 
-.url {cursor: url(https://w7.pngwing.com/pngs/612/26/png-transparent-controller-gamepad-xbox-video-games-computer-game-icon.png),auto;}
+@media (max-width: 1400px){
+    body {
+        text-align: center;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr
+    }
+    h1 {
+        grid-template-columns: 1fr;
+        text-align: center;
+        color: black;
+        font-family: Impact;
+        border: 20px round black;
+        background-image: url(https://i.gifer.com/WMV.gif);
+        background-color:  rgb(139, 241, 102);
+        margin: 0;
+    }
+
+}
