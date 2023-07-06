@@ -7,6 +7,8 @@ Users will be able to add and remove games accordingly.
 Users can also keep track of which items are in and ot of stock with a click of a button!
 
 ## Files Included:
-  index.html
-  main.js
-  style.css
+  -index.html
+  
+  -main.js
+  
+  -style.css
